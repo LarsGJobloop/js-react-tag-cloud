@@ -5,7 +5,9 @@
 
 :root {
   --color-primary: blueviolet;
-  --color-secondary: ;
+  --color-secondary: blanchedalmond;
+
+  --spacing-m: 1rem;
 }
 
 .App {
@@ -20,13 +22,13 @@
 }
 
 header {
-  background-color: blanchedalmond;
+  background-color: var(--color-secondary);
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 1rem 0px;
+  padding: var(--spacing-m) 0px;
 }
 
 footer {
@@ -35,7 +37,7 @@ footer {
   display: flex;
   justify-content: center;
 
-  padding: 1rem 0px;
+  padding: var(--spacing-m) 0px;
 }
 
 .gallery {

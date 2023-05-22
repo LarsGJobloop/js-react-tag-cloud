@@ -1,3 +1,5 @@
+import { TagCloud } from "./components/TagCloud/TagCloud"
+
 function App() {
   return (
     <div className="App">
@@ -7,7 +9,7 @@ function App() {
       </header>
 
       <main className="gallery">
-        hell
+        <TagCloud />
       </main>
 
       <footer>
