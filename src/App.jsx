@@ -1,5 +1,18 @@
 import { TagCloud } from "./components/TagCloud/TagCloud"
 
+const tagElements = [
+  "VSCode",
+  "TypeScript",
+  "React",
+  "Preact",
+  "Parcel",
+  "Jest",
+  "Next",
+  "ESLint",
+  "Framer Motion",
+  "Three.js",
+]
+
 function App() {
   return (
     <div className="App">
@@ -9,7 +22,7 @@ function App() {
       </header>
 
       <main className="gallery">
-        <TagCloud />
+        <TagCloud elements={tagElements} />
       </main>
 
       <footer>

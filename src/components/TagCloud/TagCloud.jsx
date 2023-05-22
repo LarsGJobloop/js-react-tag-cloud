@@ -2,7 +2,9 @@ import { TagCloud as TagCloudBase } from '@frank-mayer/react-tag-cloud'
 
 import styles from './styles.module.css'
 
-export function TagCloud() {
+export function TagCloud({
+  elements
+}) {
   return (
     <TagCloudBase
       options={(window) => ({
@@ -12,18 +14,7 @@ export function TagCloud() {
       onClick={(tag) => alert(tag)}
       onClickOptions={{ passive: true }}
     >
-      {[
-        "VSCode",
-        "TypeScript",
-        "React",
-        "Preact",
-        "Parcel",
-        "Jest",
-        "Next",
-        "ESLint",
-        "Framer Motion",
-        "Three.js",
-      ]}
+      {elements}
     </TagCloudBase>
   )
 }
